@@ -1,9 +1,9 @@
 # Spark Lab
-> The difference is measurable
+> Helping your business grow
 ---
 
 Spark Lab is a basic web application with a Rails API only backend and React/Redux front end.
-- Ruby 2.5
+- Ruby 2.5.1
 - Node 10.2.1
 - Rails 5.2
 - PostgreSQL 10.1
