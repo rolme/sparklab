@@ -1,0 +1,73 @@
+.headerNavBarContainer {
+  position: absolute;
+  top: 0;
+  background-color: rgba(33, 33, 33, 0.4) !important;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 0 5px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 0 5px rgba(0, 0, 0, 0.4);
+  padding: 0 !important;
+  margin: 0 auto;
+}
+
+.headerNavBarContainer > .contentContainer {
+  width: 100%;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.headerNavBar {
+  max-height: calc(100vh - 110px);
+}
+
+.headerNavBarToggler:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.headerLogo {
+  cursor: pointer;
+  padding: 10px 40px 10px 0 !important;
+}
+
+.headerLogo img {
+  height: 60px;
+}
+
+.headerCenterMenuItemsContainer {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.headerMenuItem {
+  font-size: 13px;
+  color: #8C9664 !important;
+  font-family: 'Montserrat-Medium';
+  padding: 29px 30px !important;
+  text-transform: uppercase;
+}
+
+.headerMenuItem:hover {
+  color: #e5e5e5 !important;
+}
+
+.headerMenuItem:active {
+  color: #FFFFFF !important;
+  border: none;
+}
+
+.headerMenuItem.active {
+  border-top: 3px solid #2997EF;
+  color: #FFFFFF !important;
+  padding-top: 27px !important;
+}
+
+.headerMenuItem.active:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.83) !important;
+}

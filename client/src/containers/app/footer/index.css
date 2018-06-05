@@ -1,0 +1,72 @@
+.footerContainer {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  min-height: 30px;
+}
+
+.footerContainer > .container-fluid {
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerText {
+  color: #7c7c7c;
+  margin: 0;
+  font-family: 'Roboto-Medium';
+  text-decoration: none;
+  font-size: 10px;
+}
+
+a.footerText:hover {
+  color: #2997EF;
+  text-decoration: none;
+}
+
+.footerJobShape {
+  background-color: #2997EF;
+  height: 1px;
+  width: 10px;
+}
+
+.footerText > .socialButtonIcon {
+  font-family: 'Footer-Icons';
+  color: #7c7c7c;
+  font-size: 12px;
+  font-style: normal;
+}
+
+.footerText > .socialButtonIcon:hover {
+  color: #2997EF;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+
+  .footerContainer > .container-fluid > div {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footerContainer > .container-fluid > div:nth-last-child(1) {
+    margin-bottom: 0 !important;
+  }
+
+  .footerText {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 641px) {
+  .footerContainer {
+    padding: 10px;
+  }
+}

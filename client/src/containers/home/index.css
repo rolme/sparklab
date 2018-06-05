@@ -1,0 +1,183 @@
+.homeCarouselImage {
+  max-height: 840px;
+}
+
+.homeCarouselImage > div > .homeCarouselTextContainer {
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 1230px;
+  color: #fff;
+  line-height: 1;
+  padding: 0;
+  position: absolute;
+  white-space: normal;
+  align-items: center;
+}
+
+.homeCarouselTextHeader {
+  font-size: 64px;
+  text-align: center;
+  font-family: 'Montserrat-Regular';
+}
+
+.homeCarouselText {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Montserrat-Regular';
+}
+
+.homeSliderNavigationButton {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+  position: absolute;
+  cursor: pointer;
+}
+
+.homeSliderNavigationBullet {
+  padding: 3px 13px !important;
+  border: 2px solid #fff !important;
+  border-radius: 27% !important;
+}
+
+.homeSliderNavigationBullet.active {
+  border-color: #1FA7EF !important;
+  background: #1FA7EF !important;
+}
+
+.homePageSectionContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.homePageSectionHeader {
+  font-family: 'Karla-Bold';
+  font-size: 32px;
+  color: #444444;
+  text-align: center;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.homePageSectionUnderHeaderLine {
+  background-color: #41B079;
+  height: 3px;
+  width: 80px;
+}
+
+.homePageSectionContentPartContainer {
+  display: flex;
+  padding: 100px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatIsPartText {
+  font-family: 'Montserrat-Regular';
+  font-size: 18px;
+  color: #262626;
+  text-align: center;
+}
+
+.homePageServicesSectionContainer > .contentContainer > .homePageSectionContentPartContainer {
+  padding: 100px 0 20px 0;
+}
+
+.servicePointContainer {
+  margin-bottom: 80px;
+}
+
+.servicePointIcon {
+  max-width: 70px;
+}
+
+.servicePointHeader {
+  color: #50AC58;
+  font-family: 'Karla-Bold';
+  font-size: 22px;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.servicePointDescription {
+  font-family: 'Montserrat-Regular';
+  font-size: 15px;
+  color: #616161;
+  text-align: center;
+}
+
+.teamMemberAvatar {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.teamMemberAvatar.ronAvatar {
+  background-image: url("/assets/images/RonAvatar.jpg");
+}
+
+.teamMemberAvatar.randyAvatar {
+  background-image: url("/assets/images/RandyAvatar.jpg");
+}
+
+.teamMemberName {
+  color: #50AC58;
+  font-family: 'Montserrat-Medium';
+  font-size: 20px;
+}
+
+.teamPartText {
+  font-family: 'Montserrat-Regular';
+  font-size: 18px;
+  color: #262626;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .homeCarouselImage > div > .homeCarouselTextContainer {
+    width: 80%;
+  }
+
+  .homeCarouselTextHeader {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 641px) {
+  .homeCarouselTextHeader {
+    font-size: 25px;
+  }
+
+  .homeCarouselText {
+    font-size: 12px;
+  }
+
+  .homePageSectionContentPartContainer {
+    padding: 20px 0;
+  }
+
+  .homePageSectionContainer {
+    padding-top: 20px;
+  }
+
+  .homePageServicesSectionContainer > .contentContainer > .homePageSectionContentPartContainer {
+    padding: 20px 0;
+  }
+
+  .servicePointContainer {
+    margin-bottom: 20px;
+  }
+}

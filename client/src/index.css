@@ -1,5 +1,88 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('./assets/fonts/montserratRegular/Montserrat-Regular.ttf') format('truetype'),
+  url('./assets/fonts/montserratRegular/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('./assets/fonts/montserratMedium/Montserrat-Medium.ttf') format('truetype'),
+  url('./assets/fonts/montserratMedium/Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Karla-Bold';
+  src: url('./assets/fonts/karlaBold/Karla-Bold.ttf') format('truetype'),
+  url('./assets/fonts/karlaBold/Karla-Bold.svg#Karla-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+  url('./assets/fonts/robotoMedium/Roboto-Medium.ttf') format('truetype'),
+  url('./assets/fonts/robotoMedium/Roboto-Medium.svg#Roboto-Medium') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Footer-Icons';
+  font-weight: normal;
+  font-style: normal;
+  src: url("./assets/fonts/icons/footerIcons.eot") format('eot');
+  src: url("./assets/fonts/icons/footerIcons.svg") format('svg');
+  src: url("./assets/fonts/icons/footerIcons.ttf") format('truetype');
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.appContainer {
+  margin: 0 auto;
+}
+
+#root,
+#root > div {
+  height: 100%;
+  background-color: #f8f9fa !important;
+}
+
+.pageContainer {
+  overflow-y: hidden;
+  margin: 0 auto;
+  min-height: calc(100% - 30px);
+  padding: 0 0 60px 0;
+}
+
+.contentContainer {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .pageContainer {
+    padding: 80px 0 120px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    padding: 0 !important;
+  }
 }

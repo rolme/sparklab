@@ -4,11 +4,14 @@ import Loadable from 'react-loadable'
 import Loading from "../../components/loadingComponent"
 
 const Home = Loadable({ loader: () => import('../home'), loading: Loading })
+const Header = Loadable({ loader: () => import('./header'), loading: Loading })
+const Footer = Loadable({ loader: () => import('./footer'), loading: Loading })
 
 export default class App extends Component {
   render() {
     return (
       <div id="appContainer" className="appContainer">
+        <Header/>
         <div className="pageContainer position-relative bg-light">
           <main>
             <Switch>
@@ -16,6 +19,7 @@ export default class App extends Component {
             </Switch>
           </main>
         </div>
+        <Footer/>
       </div>
     )
   }
