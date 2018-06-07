@@ -73,6 +73,92 @@ body {
   max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
+  position: relative;
+}
+
+.spinnerContainer {
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+.formGroup {
+  line-height: 14px;
+}
+
+.inputFieldLabel {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  color: #2997EF;
+  font-size: 11px;
+  line-height: 11px;
+  font-family: 'Montserrat-Regular';
+  padding: 10px 15px 0 15px !important;
+  height: 20px;
+}
+
+.inputField,
+.inputSelectField,
+.selectField {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  font-family: 'Montserrat-Regular';
+  font-size: 17px !important;
+  background-color: rgb(245, 245, 245) !important;
+  line-height: 18px !important;
+  padding: 7px 15px 15px 15px !important;
+  border-radius: 0 !important;
+  height: 40px;
+}
+
+.selectField {
+  height: 60px !important;
+  padding: 11px 15px 11px 15px !important;
+}
+
+.inputField::placeholder,
+.inputSelectField::placeholder {
+  color: #BCBCBC !important;
+  opacity: 1;
+}
+
+.inputField:focus,
+.inputSelectField.is-open {
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 1px solid rgb(33, 150, 243) !important;
+}
+
+.inputField:-webkit-autofill {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.submitButton {
+  background-color: #1FA7EF !important;
+  border: 2px solid #1FA7EF !important;
+  box-shadow: none !important;
+  color: #FFFFFF !important;
+  font-family: 'Montserrat-Regular' !important;
+  font-size: 17px !important;
+  padding: 18px !important;
+  line-height: 20px !important;
+}
+
+.submitButton:hover {
+  background-color: #1fb1ff !important;
+}
+
+.submitButton:focus {
+  background-color: #1FA7EF !important;
+  border-color: #1FA7EF !important;
+  box-shadow: none !important;
+  color: #FFFFFF !important;
 }
 
 @media (max-width: 992px) {

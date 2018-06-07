@@ -4,6 +4,7 @@ import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'react-router-redux'
 import store, { history } from './store'
 import App from './containers/app'
+import './setup'
 
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
