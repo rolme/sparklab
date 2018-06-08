@@ -116,6 +116,7 @@ export default class ImageSlider extends Component {
       <ImageGallery className='homeCarouselContainer'
                     items={images}
                     showBullets
+                    autoPlay
                     showThumbnails={false}
                     showFullscreenButton={false}
                     showPlayButton={false}
