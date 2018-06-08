@@ -24,9 +24,12 @@ class RequestForm extends Component {
     this.handleSendClick = this.handleSendClick.bind(this)
   }
 
-   componentDidUpdate() {
+  componentDidUpdate() {
     const { pending, error, message } = this.props
     if ( pending !== this.state.isLoading || error !== this.state.error || message !== this.state.message ) {
+      if ( message === 'Thank you!' ) {
+        this.setState({ name: '', email: '', capital: '', location: '', notes: '', })
+      }
       this.setState({ isLoading: pending, error, message })
     }
   }
