@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2018_06_07_222457) do
     t.string "capital"
     t.string "location"
     t.string "notes"
-    t.string "status"
+    t.string "status", default: "new"
     t.string "slug"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
