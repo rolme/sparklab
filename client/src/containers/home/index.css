@@ -146,6 +146,18 @@
   margin-bottom: 100px;
 }
 
+.consultingSessionRequestFormContainer {
+  margin-top: 100px;
+}
+
+.consultingSessionRequestFormContainer > .contentContainer {
+  min-height: 200px;
+}
+
+.consultingSessionRequestSendButton {
+  margin: 40px 0 100px 0;
+}
+
 @media (max-width: 768px) {
   .homeCarouselImage > div > .homeCarouselTextContainer {
     width: 80%;

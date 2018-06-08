@@ -3,6 +3,7 @@ import "react-image-gallery/styles/css/image-gallery.css"
 import { Col } from 'reactstrap'
 
 import ImageSlider from './imageSlider'
+import RequestForm from './requestForm'
 import './index.css'
 
 class Home extends Component {
@@ -70,6 +71,11 @@ class Home extends Component {
               </Col>
             </Col>
           </div>
+        </Col>
+        <Col className="homePageSectionContainer bg-white">
+          <p className="homePageSectionHeader">Request a consulting session</p>
+          <div className="homePageSectionUnderHeaderLine"/>
+          <RequestForm/>
         </Col>
       </div>
     )
