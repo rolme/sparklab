@@ -6,7 +6,8 @@ class CreateConsultations < ActiveRecord::Migration[5.2]
       t.string :capital
       t.string :location
       t.string :notes
-      t.string :status
+      t.string :status, default: 'new'
+      t.string :slug
 
       t.timestamps
     end
