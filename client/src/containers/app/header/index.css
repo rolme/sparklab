@@ -1,5 +1,5 @@
 .headerNavBarContainer {
-  position: absolute;
+  position: fixed;
   top: 0;
   background-color: rgba(33, 33, 33, 0.4) !important;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 0 5px rgba(0, 0, 0, 0.4);
@@ -54,6 +54,7 @@
 
 .headerMenuItem:hover {
   color: #e5e5e5 !important;
+  text-decoration: none;
 }
 
 .headerMenuItem:active {

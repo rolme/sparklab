@@ -23,7 +23,8 @@ export default class Header extends Component {
 
   render() {
     return (
-      <Navbar className="headerNavBarContainer navbar navbar-expand-lg navbar-light fixed-top">
+      <div>
+        <Navbar id="navbar" className="headerNavBarContainer navbar navbar-expand-lg navbar-light fixed-top">
         <div ref="headerContainer" className="contentContainer">
           <NavLink to="/" className="headerLogo">
             <img src="/assets/images/headerLogo.png" alt="logo"/>
@@ -31,14 +32,16 @@ export default class Header extends Component {
           <NavbarToggler onClick={this.toggleNavbar} className='headerNavBarToggler'/>
           <Collapse isOpen={!this.state.collapsed} navbar className="headerNavBar">
             <Col xl={8} lg={8} className="navbar-nav headerCenterMenuItemsContainer mr-auto">
-              <NavLink to="/" exact={true} onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-link">Home</NavLink>
-              <NavLink to="/services" exact={true} onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-link">Services</NavLink>
-              <NavLink to="/team" exact={true} onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-link">Team</NavLink>
-              <NavLink to="/contactUs" exact={true} onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-link">Contact Us</NavLink>
+              <a href="#top" onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-lin active">Home</a>
+              <a href="#services" className="headerMenuItem nav-item nav-link">Services</a>
+              <a href="#team" onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-link">Team</a>
+              <a href="#contactUs" onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-link">Contact Us</a>
             </Col>
           </Collapse>
         </div>
       </Navbar>
+      </div>
+
     )
   }
 }

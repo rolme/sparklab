@@ -8,8 +8,8 @@ import './index.css'
 class Home extends Component {
   render() {
     return (
-      <div className="homeContainer">
-        <ImageSlider/>
+      <div data-spy="scroll" data-target="#navbar" data-offset="0" className="homeContainer">
+        <ImageSlider id="top"/>
         <Col className="homePageSectionContainer">
           <p className="homePageSectionHeader">What is Spark Lab?</p>
           <div className="homePageSectionUnderHeaderLine"/>
@@ -19,7 +19,7 @@ class Home extends Component {
             </Col>
           </div>
         </Col>
-        <Col className="homePageSectionContainer homePageServicesSectionContainer bg-white">
+        <Col id="services" className="homePageSectionContainer homePageServicesSectionContainer bg-white">
           <p className="homePageSectionHeader">Services</p>
           <div className="homePageSectionUnderHeaderLine"/>
           <div className="contentContainer">
@@ -52,7 +52,7 @@ class Home extends Component {
             </Col>
           </div>
         </Col>
-        <Col className="homePageSectionContainer">
+        <Col id="team" className="homePageSectionContainer">
           <p className="homePageSectionHeader">Team</p>
           <div className="homePageSectionUnderHeaderLine"/>
           <div className="contentContainer">
