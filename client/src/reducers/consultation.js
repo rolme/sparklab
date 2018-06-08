@@ -1,9 +1,9 @@
 import { createReducer } from "redux-action"
 import axios from 'axios'
 
-export const FETCH = "subscriptions/FETCH"
-export const FETCH_FAILURE = "subscriptions/FETCH_FAILURE"
-export const FETCH_SUCCESS = "subscriptions/FETCH_SUCCESS"
+export const CREATE = "subscriptions/CREATE"
+export const CREATE_FAILURE = "subscriptions/CREATE_FAILURE"
+export const CREATE_SUCCESS = "subscriptions/CREATE_SUCCESS"
 
 const initialState = {
   error: '',
@@ -14,23 +14,23 @@ const initialState = {
 
 export const fetchRequest = (data) => {
   return dispatch => {
-    dispatch({ type: FETCH })
-    axios.post('/api/consultation/', {consultation: data})
+    dispatch({ type: CREATE })
+    axios.post('/api/consultations/', {consultation: data})
       .then(response => {
         if ( response.data.status !== 'error' ) {
-          dispatch({ type: FETCH_SUCCESS, payload: response.data })
+          dispatch({ type: CREATE_SUCCESS, payload: response.data })
         } else {
-          dispatch({ type: FETCH_FAILURE, payload: response.data })
+          dispatch({ type: CREATE_FAILURE, payload: response.data })
         }
       })
       .catch(err => {
-        dispatch({ type: FETCH_FAILURE, payload: err.data })
+        dispatch({ type: CREATE_FAILURE, payload: err.data })
       })
   }
 }
 
 export default createReducer(initialState, ({
-  [FETCH]: (payload, state) => {
+  [CREATE]: (payload, state) => {
     return {
       ...state,
       error: '',
@@ -38,7 +38,7 @@ export default createReducer(initialState, ({
       pending: true
     }
   },
-  [FETCH_SUCCESS]: (payload, state) => {
+  [CREATE_SUCCESS]: (payload, state) => {
     return {
       ...state,
       error: '',
@@ -46,7 +46,7 @@ export default createReducer(initialState, ({
       pending: false
     }
   },
-  [FETCH_FAILURE]: (payload, state) => {
+  [CREATE_FAILURE]: (payload, state) => {
     const message = !!payload && !!payload.message ? payload.message : 'Something went wrong, please try again!'
     return {
       ...state,
