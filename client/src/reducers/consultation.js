@@ -15,7 +15,7 @@ const initialState = {
 export const fetchRequest = (data) => {
   return dispatch => {
     dispatch({ type: FETCH })
-    axios.post('/api/consultation/', data)
+    axios.post('/api/consultation/', {consultation: data})
       .then(response => {
         if ( response.data.status !== 'error' ) {
           dispatch({ type: FETCH_SUCCESS, payload: response.data })
