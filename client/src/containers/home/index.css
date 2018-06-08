@@ -1,3 +1,7 @@
+.homeContainer {
+  position: relative;
+}
+
 .homeCarouselImage {
   max-height: 840px;
 }

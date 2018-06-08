@@ -32,7 +32,7 @@ export default class Header extends Component {
           <NavbarToggler onClick={this.toggleNavbar} className='headerNavBarToggler'/>
           <Collapse isOpen={!this.state.collapsed} navbar className="headerNavBar">
             <Col xl={8} lg={8} className="navbar-nav headerCenterMenuItemsContainer mr-auto">
-              <a href="#top" onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-lin active">Home</a>
+              <a href="#top" onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-lin">Home</a>
               <a href="#services" className="headerMenuItem nav-item nav-link">Services</a>
               <a href="#team" onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-link">Team</a>
               <a href="#contactUs" onClick={() => this.toggleNavbar(true)} className="headerMenuItem nav-item nav-link">Contact Us</a>
